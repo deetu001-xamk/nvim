@@ -31,7 +31,7 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
-                "ts_ls",  -- ✅ Using ts_ls instead of tsserver
+                "ts_ls", 
                 "tailwindcss",
                 "zls",
             },
