@@ -1,21 +1,14 @@
 
+return  {
 
-return {
-    "rose-pine/neovim",
-    name = "rose-pine",
-    config = function()
-        require("rose-pine").setup({
-            disable_background = true
-        })
-
-        vim.cmd("colorscheme rose-pine")
-
-        vim.cmd([[
-            hi Normal guibg=NONE ctermbg=NONE
-            hi NormalNC guibg=NONE ctermbg=NONE
-            hi SignColumn guibg=NONE
-            hi VertSplit guibg=NONE
-        ]])
-    end
+          'sainnhe/gruvbox-material',
+          lazy = false,
+          priority = 1000,
+          config = function()
+            -- Optionally configure and load the colorscheme
+            -- directly inside the plugin declaration.
+            -- vim.g.gruvbox_material_transparent_background = 1
+            vim.g.gruvbox_material_enable_italic = true
+            vim.cmd.colorscheme('gruvbox-material')
+          end
 }
-
