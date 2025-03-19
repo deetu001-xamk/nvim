@@ -6,6 +6,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Undotree
+vim.keymap.set("n", "<leader>pu", vim.cmd.UndotreeToggle)
+
 
 
 -- Harpoon
