@@ -25,6 +25,7 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
+vim.cmd.colorscheme("tokyonight-storm")
 
 require("config.remap")
 require("config.options")
