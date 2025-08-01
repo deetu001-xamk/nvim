@@ -9,6 +9,10 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 -- Undotree
 vim.keymap.set("n", "<leader>pu", vim.cmd.UndotreeToggle)
 
+-- LspSaga
+
+vim.keymap.set("n", "<leader>ga", "<cmd>Lspsaga peek_definition<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>gd", "<cmd>Lspsaga goto_definition<CR>", { noremap = true, silent = true })
 
 
 -- Harpoon

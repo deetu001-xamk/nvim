@@ -25,8 +25,6 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
-vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
 
 require("config.remap")
 require("config.options")
